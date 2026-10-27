@@ -25,10 +25,11 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html" id="login-link">Login</a></li>
+                    <li><a href="#" id="logout-link" hidden>Logout</a></li>
                 </ul>
             </nav>
-            <button id="book-appointment"
-             onclick="window.location.href='#contact'">
+            <button id="book-appointment">
              Book Appointment
             </button>
         </div>
@@ -175,6 +176,24 @@
             </div>
             </div>
             <div class="team-member">
+                <img src="images/naqqee.png"
+                    alt="Dr. Naqqee Cornick">
+
+            <div class="team-member-info">
+                <h3>Dr. Naqqee Cornick</h3>
+
+                <p class="team-role">Manager</p>
+
+                <p class="team-bio">
+                    Dr. Naqqee Cornick oversees the daily operations of the clinic,
+                    ensuring that appointments run smoothly, staff members work efficiently,
+                    and patients receive excellent service. He manages the entire schedules and ensure all
+                    policies and hygiene standards are followed. Our manager also encourages
+                    communication between staff and patients, while ensuring organised and patient-centred dental care.
+                </p>
+             </div>
+            </div>
+            <div class="team-member">
             <img src="images/Omolemo.png"
                  alt="Dr. Omolemo Sedikoe">
 
@@ -218,13 +237,14 @@
 
         <div class="contact-item">
             <h3>Email</h3>
-            <p>boitumelo.aphane@generationschools.co.za</p>
+            <p>re.tooth.dentalc@gmail.com</p>
         </div>
 
         <div class="contact-item">
             <h3>Opening Hours</h3>
             <p>Monday-Friday: 9 AM-5 PM</p>
-        </div>
+            <p>Weekend: 9 AM-3 PM</p>
+        </div> 
     </div>
 
     <div class="booking">
@@ -288,5 +308,6 @@
     </footer>
 
     <script src="app.js"></script>
+    <script type="module" src="./session.js"></script>
 </body>
 </html> 

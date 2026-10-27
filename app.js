@@ -1,12 +1,14 @@
 const header = document.querySelector('header');
 
-window.addEventListener('scroll', () => {
+if (header) {
+  window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     header.classList.add('compact');
   } else {
     header.classList.remove('compact');
   }
 });
+}
 
 const appointmentDate = document.getElementById("appointment-date");
 if (appointmentDate) {
@@ -17,4 +19,5 @@ const day = String(today.getDate()).padStart(2, '0');
 const todayFormatted = `${year}-${month}-${day}`;
 appointmentDate.min = todayFormatted;
 }
+
 

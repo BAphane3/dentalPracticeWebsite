@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient registration screen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script type="module" src="./register.js"></script>
+</head>
+<body>
+    <main class="registration-page">
+        <div class="registration-card">
+            <img src="images\logo.png" alt="Dental Clinic Logo" class="logo1">
+        <h1>Register your account</h1>
+        <p>Create an account with Re-Tooth.</p>
+        <form id="register-form">
+            <h2>Patient Registration</h2>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type= "submit">Register</button>
+        </form>
+        <p>Already have an account?<a href='login.html'>Log in here</a></p>
+        </div>
+        
+    </main>
+    <footer>
+         <p>Re-Tooth Dental Clinic &copy; 2026. All rights reserved.</p>
+    </footer>
+</body>
+</html>

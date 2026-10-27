@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashbaord</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="admin.js"></script>
+</head>
+<body>
+     <header class="admin-header">
+        <div class="admin-header-content">
+            <div class="admin-brand">
+                <img src="images\logo.png" alt="Re-Tooth Dental Clinic logo" class="logo1">
+                <h1>Re-Tooth Administration</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="administrator">
+
+        <section id="admin-dashboard">
+            <h2>Appointment Management</h2>
+            <p>Review and manage patient appointment requests.</p>
+        </section>
+
+        <section id="overview">
+            <h2>Overview</h2>
+
+            <div class="overview-cards">
+
+                <div class="overview-card" id="pending">
+                    <h3>Pending</h3>
+                    <p id="pending-count">0</p>
+                </div>
+
+                <div class="overview-card" id="confirmed">
+                    <h3>Confirmed</h3>
+                    <p id="confirmed-count">0</p>
+                </div>
+
+                <div class="overview-card" id="declined">
+                    <h3>Declined</h3>
+                    <p id="declined-count">0</p>
+                </div>
+
+                <div class="overview-card" id="total">
+                    <h3>Total Requests</h3>
+                    <p id="total-count">0</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="appointment-requests">
+            <h2>Appointment Requests</h2>
+            <p>Review submitted patient bookings below.</p>
+
+            <div id="appointment-list">
+
+            </div>
+        </section>
+        
+        <section id="appointment-history">
+            <h2>Appointment History</h2>
+            <p>View appointments that have already been reviewed.</p>
+
+            <div id="appointment-history-list">
+        
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+         <p>Re-Tooth Dental Clinic &copy; 2026. All rights reserved.</p>
+    </footer>
+</body>
+</html>
