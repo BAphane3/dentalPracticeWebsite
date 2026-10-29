@@ -7,13 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="admin.js"></script>
 </head>
+<!--Staff-dashboard will not be adding new content or HTML elements. The purpose of the page is to handle the structure of the dashboard which will be accessed by the staff.-->
 <body>
      <header class="admin-header">
         <div class="admin-header-content">
             <div class="admin-brand">
-                <img src="images\logo.png" alt="Re-Tooth Dental Clinic logo" class="logo1">
+                <img src="images/logo.png" alt="Re-Tooth Dental Clinic logo" class="logo1">
                 <h1>Re-Tooth Administration</h1>
             </div>
+                <nav id="Staff-nav">
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#appointment-requests">Requests</a></li>
+                        <li><a href="#patients">Patients</a></li>
+                        <li><a href="#upcoming">Upcoming</a></li>
+                        <li><a href="#past">Past-appointments</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    
+                    </ul>
+                </nav>     
         </div>
     </header>
 
@@ -32,27 +44,32 @@
                 <div class="overview-card" id="pending">
                     <h3>Pending</h3>
                     <p id="pending-count">0</p>
+                    <a href="#appointment-requests">View requests</a>
                 </div>
 
                 <div class="overview-card" id="confirmed">
-                    <h3>Confirmed</h3>
+                    <h3>Upcoming appointments</h3>
                     <p id="confirmed-count">0</p>
+                    <a href="#upcoming">Upcoming appointments</a>
+                    
                 </div>
 
-                <div class="overview-card" id="declined">
-                    <h3>Declined</h3>
-                    <p id="declined-count">0</p>
+                <div class="overview-card" id="registered">
+                    <h3>Patients</h3>
+                    <p id="patients-count">0</p>
+                    <a href="#patients">Registered patients</a>
                 </div>
 
-                <div class="overview-card" id="total">
-                    <h3>Total Requests</h3>
-                    <p id="total-count">0</p>
+                <div class="overview-card" id="prev">
+                    <h3>Past appointments</h3>
+                    <p id="past-count">0</p>
+                    <a href="#past">Prev appointments</a>
                 </div>
 
             </div>
         </section>
 
-        <section id="appointment-requests">
+         <section id="appointment-requests">
             <h2>Appointment Requests</h2>
             <p>Review submitted patient bookings below.</p>
 
@@ -60,15 +77,51 @@
 
             </div>
         </section>
+
+
+        <section id="patients">
+            <h2>Registered patients</h2>
+
+            <div id="patients-list">
+
+            </div>
+
+        </section>
+
+        <section id="upcoming">
+            <h2>Upcoming apointments</h2>
+
+            <div id="upcoming-list">
+
+            </div>
+        </section>
         
-        <section id="appointment-history">
-            <h2>Appointment History</h2>
-            <p>View appointments that have already been reviewed.</p>
+        <section id="past">
+            <h2>Appointments History</h2>
 
             <div id="appointment-history-list">
         
             </div>
         </section>
+
+        
+
+        <section id="reports" class="report-section">
+            <h2>Appointment Summary Report</h2>
+            <p> Generate a summary of appointment activity at the clinic.</p>
+
+            <button type="button" id="generate-report">
+                Generate Report
+            </button>
+            <button type="button" id="download-report" disabled>
+                Download Report (CSV)
+            </button>
+
+            <div id="report-results" aria-live="polite">
+                <p>Select "Generate Report" to view the appointment summary.</p>
+            </div>
+        </section>
+
 
     </main>
 

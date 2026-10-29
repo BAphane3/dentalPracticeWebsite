@@ -9,15 +9,17 @@
 
 <body>
     <header>
-        
+        <!--The semantic header elements will store all the content in my header(logo,name,slogan,and nav links)-->
         <div class="header-content">
             <div id="brand">
-                <img src="images\logo.png" alt="Dental Clinic Logo" class="logo">
+                <!--Logo image was crafted from scratch using editing tools(proof in screenshot)-->
+                <img src="images/logo.png" alt="Dental Clinic Logo" class="logo">
                 <div class="brand-text">
                     <h1>Re-Tooth</h1>
                     <p>Your Smile, Our Priority</p>
                 </div>
             </div>
+            <!--Semantic element(nav) to hold the nav links inside my header section.-->
             <nav id="navbar">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -29,14 +31,15 @@
                     <li><a href="#" id="logout-link" hidden>Logout</a></li>
                 </ul>
             </nav>
+            <!--button semantic element representing a button(it's action stored in js)-->
             <button id="book-appointment">
              Book Appointment
             </button>
         </div>
     </header>
-
+    <!--The header section is closed with the </header> teag, the main is opened to hold all the main content of the website-->
     <main>
-
+        <!--The main content is divided by sections so that the nav links in my header can navigate to it's appropriate section.-->
         <section class="hero" id="home">
             <div id="hero-text">
                 <h2>A little care goes a long way</h2>
@@ -44,7 +47,8 @@
             </div>
 
             <div id="hero-content">
-                <img src="images\hero-image.jpg" alt="Dental Care" class="hero-image">
+                <!--image source: https://images.pexels.com/photos/6812453/pexels-photo-6812453.jpeg -->
+                <img src="images/hero-image.jpg" alt="Dental Care" class="hero-image">
                 <div class="hero-content-text" >
                     <h3><em>Our Philosophy</em></h3>
                     <p>We are committed to delivering personalized dental care in a comfortable and welcoming environment, ensuring the best experience for our patients.</p>
@@ -54,7 +58,7 @@
            </div> 
                 
         </section>
-
+        <!--services section represented by cards, each card represents a certain service offered by the dental clinic.-->
         <section class="services" id="services">
             <p><em>Good care, made simple</em></p>
             <h2>Our Services</h2>
@@ -62,13 +66,15 @@
             <div class="service-cards">
                 <div class="service-cards-group-1">
                     <div class="service-card">
-                    <img src="images\general-dentistry.jpg" alt="General Dentistry">
-                    <h3>General Dentistry</h3>
-                    <p>Comprehensive dental care for all ages, including check-ups, cleanings, and preventive treatments.</p>
-                    <a href="#contact" class="service-link">Book now</a>
+                        <!--image link:https://images.pexels.com/photos/35151920/pexels-photo-35151920.jpeg-->
+                        <img src="images/general-dentistry.jpg" alt="General Dentistry">
+                        <h3>General Dentistry</h3>
+                        <p>Comprehensive dental care for all ages, including check-ups, cleanings, and preventive treatments.</p>
+                        <a href="#contact" class="service-link">Book now</a>
                 </div>
                 <div class="service-card">
-                    <img src="images\cosmetic-dentistry.jpg" alt="Cosmetic Dentistry">
+                    <!--image link:https://images.pexels.com/photos/6627571/pexels-photo-6627571.jpeg -->
+                    <img src="images/cosmetic-dentistry.jpg" alt="Cosmetic Dentistry">
                     <h3>Cosmetic Dentistry</h3>
                     <p>Enhance your smile with our cosmetic procedures, including teeth whitening and smile makeovers.</p>
                     <a href="#contact" class="service-link">Book now.</a>
@@ -76,13 +82,16 @@
             </div>
                 <div class="service-cards-group-2">
                     <div class="service-card">
-                    <img src="images\teeth-straightening.jpg" alt="Orthodontics">
-                    <h3>Orthodontics</h3>
-                    <p>Straighten your teeth and improve your bite with our orthodontic treatments, including braces and aligners.</p>
-                    <a href="#contact" class="service-link">Book now</a>
+                        <!--image link:https://images.pexels.com/photos/19147369/pexels-photo-19147369.jpeg-->
+                        <img src="images/teeth-straightening.jpg" alt="Orthodontics">
+                        <h3>Orthodontics</h3>
+                        <p>Straighten your teeth and improve your bite with our orthodontic treatments, including braces and aligners.</p>
+                        <!--The embedded links on each card shares the same logic which will lead to the booking section-->
+                        <a href="#contact" class="service-link">Book now</a>
                 </div>
                 <div class="service-card">
-                    <img src="images\emergency-dentistry.jpg" alt="Emergency Dentistry">
+                    <!--image link: https://images.pexels.com/photos/6627566/pexels-photo-6627566.jpeg -->
+                    <img src="images/emergency-dentistry.jpg" alt="Emergency Dentistry">
                     <h3>Emergency Dentistry</h3>
                     <p>Prompt care for dental emergencies, including toothaches, broken teeth, and other urgent dental issues.</p>
                     <a href="#contact" class="service-link">Book now</a>
@@ -93,7 +102,8 @@
         <section class="about" id="about">
             <h2><em>About us</em></h2>
             <div id="about-content">
-                <img src="images\about.jpg" alt="Dental practice">
+                <!--image source link: https://images.pexels.com/photos/19879759/pexels-photo-19879759.jpeg-->
+                <img src="images/about.jpg" alt="Dental practice">
                 <p>Re-Tooth Dental Clinic  in Cape Town offers dental treatment in a relaxed, comfortable and friendly environment.
                  We are dedicated to providing exceptional dental care in a friendly and professional environment. 
                  Our team of experienced dentists and staff are committed to ensuring your comfort and satisfaction during every visit.
@@ -103,6 +113,7 @@
                 </p>
             </div>
         </section>
+        <!--About section, providing users with a brief background.-->
         <section class="why-us" id="why-us">
             <h1><em>Why choose Re-tooth</em></h1>
             <div id="cards">
@@ -125,7 +136,8 @@
         </section>
         
 
-        
+        <!--The  team section was used to describe our team and physicians behind our beautiful craft work.-->
+        <!--Images were created by Chatgpt using myself and people close to me with consent to using their faces to represent real-world physicians contract policy in place.-->
         <section class="team" id="team">
             <h2>Meet Our Team</h2>
 
@@ -213,98 +225,103 @@
                     overall smile appearance.
                 </p>
             </div>
-            </div>
+         </div>
 
         </div>
     </section>
 
 
+    <!--The contact section will provide details on where and how to find us. The section is inclusive of the booking form-->
+    <section class="contact" id="contact">
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>Don't hesitate to contact us.</p>
+
+            <div class="contact-item">
+                <h3>Our Address</h3>
+                <address>16 Mountain Road, Kommetjie, Cape Town, 7975</address>
+            </div>
+            <!--N.B. Most details in this section are real instead of the address, with the email account configured in place and running, and the contact details real and running.-->
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>+27 79 052 1882</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>re.tooth.dentalc@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Opening Hours</h3>
+                <p>Monday-Friday: 9 AM-5 PM</p>
+                <p>Weekend: 9 AM-3 PM</p>
+            </div> 
+        </div>
+
+        <div class="booking">
+            <!--This is the booking form which uses HTMLs form logic and rules on the 'required' to ensure the users fill in all necessary fields to submit the form.-->
+            <h2>Book an Appointment</h2>
+
+            <form id="booking-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service Required:</label>
+                    <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="general-dentistry">General Dentistry</option>
+                    <option value="orthodontics">Orthodontics</option>
+                    <option value="cosmetic-dentistry">Cosmetic Dentistry</option>
+                    <option value="other">Other</option>
+                </select>
             
-<section class="contact" id="contact">
-    <div class="contact-details">
-        <h2>Contact Us</h2>
-        <p>Don't hesitate to contact us.</p>
+                <label for="appointment-date">Preferred Date:</label>
+                <!--date input selection-->
+                <input
+                    type="date"
+                    id="appointment-date"
+                    name="appointment-date"
+                    required>
 
-        <div class="contact-item">
-            <h3>Our Address</h3>
-            <address>16 Mountain Road, Kommetjie, Cape Town, 7975</address>
+                <label for="appointment-time">Preferred Time:</label>
+                <!--time selection options-->
+                <select
+                    id="appointment-time"
+                    name="appointment-time"
+                    required
+                >
+                    <option value="">Select a preferred time</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                </select>
+
+                <!--additional text field (not necessary), to allow additional information.-->
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" rows="4"
+                    placeholder="Tell us about your appointment needs"></textarea>
+
+                <button type="submit">Submit Booking Request</button>
+            </form>
         </div>
-
-        <div class="contact-item">
-            <h3>Phone</h3>
-            <p>+27 79 052 1882</p>
-        </div>
-
-        <div class="contact-item">
-            <h3>Email</h3>
-            <p>re.tooth.dentalc@gmail.com</p>
-        </div>
-
-        <div class="contact-item">
-            <h3>Opening Hours</h3>
-            <p>Monday-Friday: 9 AM-5 PM</p>
-            <p>Weekend: 9 AM-3 PM</p>
-        </div> 
-    </div>
-
-    <div class="booking">
-        <h2>Book an Appointment</h2>
-
-        <form id="booking-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="service">Service Required:</label>
-            <select id="service" name="service" required>
-                 <option value="">Select a service</option>
-                <option value="general-dentistry">General Dentistry</option>
-                <option value="orthodontics">Orthodontics</option>
-                <option value="cosmetic-dentistry">Cosmetic Dentistry</option>
-                <option value="other">Other</option>
-            </select>
-            
-<label for="appointment-date">Preferred Date:</label>
-<input
-    type="date"
-    id="appointment-date"
-    name="appointment-date"
-    required
->
-
-<label for="appointment-time">Preferred Time:</label>
-<select
-    id="appointment-time"
-    name="appointment-time"
-    required
->
-    <option value="">Select a preferred time</option>
-    <option value="09:00">9:00 AM</option>
-    <option value="10:00">10:00 AM</option>
-    <option value="11:00">11:00 AM</option>
-    <option value="12:00">12:00 PM</option>
-    <option value="13:00">1:00 PM</option>
-    <option value="14:00">2:00 PM</option>
-    <option value="15:00">3:00 PM</option>
-    <option value="16:00">4:00 PM</option>
-</select>
-
-
-            <label for="message">Additional Information:</label>
-            <textarea id="message" name="message" rows="4"
-                placeholder="Tell us about your appointment needs"></textarea>
-
-            <button type="submit">Submit Booking Request</button>
-        </form>
-    </div>
-</section>
+    </section>
      
-    </main>
+</main>
 
     <footer>
         <p>Re-Tooth Dental Clinic &copy; 2026. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
     </footer>
 
     <script src="app.js"></script>
