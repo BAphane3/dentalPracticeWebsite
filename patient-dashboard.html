@@ -9,6 +9,7 @@
     <script type="module" src="./session.js"></script>
 </head>
 <body>
+    <!--patient dashboard using the same logic or structure as the index.html-->
         <header>
         
         <div class="header-content">
@@ -27,13 +28,13 @@
                     <li><a href="index.html#team">Team</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="login.html" id="login-link">Login</a></li>
-                    <li><a href="#" id="logout-link" hidden>Logout</a></li>
+                    <li><a href="#" id="logout-link" hidden>Logout</a></li> <!--the logout link will be hiddden if user==loggedIn-->
                 </ul>
             </nav>
             <button id="book-appointment"
              onclick="window.location.href='index.html#contact'">
              Book Appointment
-            </button>
+            </button> <!--leads to the index.html screen to the contact/booking section when buttonclick=True-->
         </div>
     </header>
     <div id="heading">
@@ -75,6 +76,9 @@
     </main>
     <footer>
          <p>Re-Tooth Dental Clinic &copy; 2026. All rights reserved.</p>
+         <nav>
+            <a href="privacy-policy.html">Privacy Policy</a>
+         </nav>
     </footer>
     
 </body>

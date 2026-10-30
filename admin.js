@@ -1,30 +1,30 @@
 import { supabase } from "./supabase.js";
-let reportData = null;
+let reportData = null;  // reportData has no data assigned to it
 
-
+// function to refresh report data when called
 async function refreshReportData() {
     const { data: appointments, error } = await supabase
         .from("appointments")
-        .select("*");
+        .select("*"); // waits to retrieve response form the backend
 
     if (error) {
         console.error("Error refreshing report data:", error);
         reportData = null;
         return false;
-    }
+    } // if data could not be refreshed, error message display
 
     reportData = appointments;
     return true;
-}
+} // data shows appointments stored in supabase
 
-
+ // fuction to download report
 function downloadAppointmentReport() {
     if (!reportData) {
         alert("Please generate the report first.");
         return;
-    }
-
-    const totalAppointments = reportData.length;
+    } // report data should be generated before download acts
+    // elements for reportData
+    const totalAppointments = reportData.length; 
 
     const pendingCount = reportData.filter(
         appointment => appointment.status === "pending"
@@ -41,8 +41,8 @@ function downloadAppointmentReport() {
     const otherCount = reportData.filter(
         appointment =>
             !["pending", "confirmed", "declined"].includes(appointment.status)
-    ).length;
-
+    ).length; 
+    // checks the length of each element using for the report
     const now = new Date();
 
     const upcomingCount = reportData.filter(appointment => {
@@ -72,7 +72,7 @@ function downloadAppointmentReport() {
         ["Declined appointments", declinedCount],
         ["Other statuses", otherCount]
     ];
-
+    //generate csv report content
     const csv = rows.map(row =>
         row.map(value => {
             const safeValue = String(value ?? "");
