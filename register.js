@@ -30,7 +30,7 @@ registerForm.addEventListener("submit", async (event) => {
                 
             },
             // the redirect to the email link from supabase
-            emailRedirectTo: "http://127.0.0.1:5500/public/index.html"
+            emailRedirectTo: "https://retoothdental.netlify.app/"
         }
     });
     // shows error if the process can't proceed
